@@ -50,7 +50,7 @@ def main():
 
         # Prediction
         y = default_signature(tf_img)
-        raw_predictions = y["output0"][0]
+        raw_predictions = y["output_0"][0]
         raw_predictions = tf.transpose(raw_predictions)
         raw_predictions = tf.cast(raw_predictions, dtype=tf.float32)
 

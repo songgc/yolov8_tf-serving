@@ -2,15 +2,19 @@ channels:
   - anaconda
 
 dependencies:
-  - python=3.9.16
+  - python=3.10
   - cudatoolkit=11.8.0
   - pip=23.2.1
   - pip:
-    - ultralytics==8.0.187
-    - onnx2tf==1.17.2
-    - onnx==1.14.1
+    - ultralytics==v8.3.55
+    - onnx2tf==1.26.3
+    - onnx==1.16.1
     - onnxruntime-gpu==1.16.0
     - https://developer.download.nvidia.com/compute/redist/onnx-graphsurgeon/onnx_graphsurgeon-0.3.27-py2.py3-none-any.whl
     - onnxsim==0.4.33
     - sng4onnx==1.0.1
-    - tensorflow==2.13.0
+    - tensorflow==2.18.0
+    - keras
+    - tf_keras
+    - onnxslim
+    - onnxruntime
